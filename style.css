@@ -1,0 +1,122 @@
+body {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 0;
+}
+
+.rank-badge {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.rank-1 { background: linear-gradient(135deg, #FFD700, #FFA500); color: white; }
+.rank-2 { background: linear-gradient(135deg, #C0C0C0, #808080); color: white; }
+.rank-3 { background: linear-gradient(135deg, #CD7F32, #8B4513); color: white; }
+.rank-other { background: linear-gradient(135deg, #6c757d, #495057); color: white; }
+
+.user-card {
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.user-card.selected {
+    border: 3px solid #0d6efd !important;
+    background-color: #e7f3ff !important;
+}
+
+.avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.xp-bar {
+    height: 28px;
+    border-radius: 15px;
+    background: #e9ecef;
+    overflow: hidden;
+}
+
+.xp-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #28a745, #20c997);
+    transition: width 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.comparison-section {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.stat-box {
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.chart-bar {
+    height: 35px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 8px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.chart-fill {
+    height: 100%;
+    background: white;
+    transition: width 0.5s;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.goal-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #667eea;
+    transition: all 0.3s;
+}
+
+.goal-card:hover {
+    transform: translateX(5px);
+}
+
+.goal-card.completed {
+    background: #d4edda;
+    border-left-color: #28a745;
+}
