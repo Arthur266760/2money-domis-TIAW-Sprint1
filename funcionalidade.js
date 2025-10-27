@@ -1,6 +1,6 @@
 // ARQUIVO: funcionalidade.js
 // DESCRIÇÃO: Lógica de gamificação e interação
-
+const API_URL = 'https://064ab5df-a5e1-4845-a8d6-5b40f0f7dcb5-00-2lfuaa0m8r0ns.worf.replit.dev/';
 // Variáveis globais a partir do DATABASE (assumindo que bd.js foi carregado antes)
   const replit =''; // URL do projeto no Replit.com.
 let users = DATABASE.users;
